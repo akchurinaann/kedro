@@ -818,6 +818,10 @@ class KedroDataCatalog(CatalogProtocol):
         return self
 
     def exists(self, name: str) -> bool:
+        # TODO: we can remove it now after removing it from _set_manager_datasets for ParallelRunner
+        # TODO: there are now two places where it's used: benchmark_kedrodatacatalog.py and runner.py
+        # TODO: first can be removed, for the second we need choose beyween the following options:
+        # TODO: keep it as apart of CatalogProtocol, simplify CatalogProtocol and make run_only_missing compatible onloy with KedroDataCatalog
         """Checks whether registered dataset exists by calling its `exists()`
         method. Raises a warning and returns False if `exists()` is not
         implemented.
@@ -829,9 +833,8 @@ class KedroDataCatalog(CatalogProtocol):
             Whether the dataset output exists.
 
         """
-        try:
-            dataset = self._get_dataset(name)
-        except DatasetNotFoundError:
+        dataset = self.get(name)
+        if not dataset:
             return False
         return dataset.exists()
 
