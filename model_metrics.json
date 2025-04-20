@@ -1,0 +1,27 @@
+{
+  "RMSE": 12810.511243393847,
+  "R2": 0.9370173803895712,
+  "CV_RMSE": 19397.74542663671,
+  "selected_features": [
+    "LotFrontage",
+    "LotArea",
+    "OverallQual",
+    "YearBuilt",
+    "YearRemodAdd",
+    "ExterQual",
+    "BsmtQual",
+    "BsmtFinSF1",
+    "TotalBsmtSF",
+    "1stFlrSF",
+    "2ndFlrSF",
+    "GrLivArea",
+    "FullBath",
+    "KitchenQual",
+    "FireplaceQu",
+    "GarageType",
+    "GarageYrBlt",
+    "GarageFinish",
+    "GarageCars",
+    "GarageArea"
+  ]
+}

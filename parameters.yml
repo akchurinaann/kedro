@@ -1,0 +1,12 @@
+# conf/base/parameters.yml
+paramet:  # ← Этот ключ должен быть корневым
+  target_column: "SalePrice"  # Ваш реальный столбец с таргетом
+  categorical_columns: None
+  numeric_columns: None
+  outlier_threshold: 1.0
+  feature_selection_estimators: 100
+  random_state: 42
+  n_features: 30
+  n_features_1: 20
+  n_estimators: 300
+  cv_folds: 7
