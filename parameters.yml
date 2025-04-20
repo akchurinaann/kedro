@@ -1,5 +1,5 @@
 # conf/base/parameters.yml
-paramet: 
+paramet:  
   target_column: "SalePrice" 
   categorical_columns: None
   numeric_columns: None
