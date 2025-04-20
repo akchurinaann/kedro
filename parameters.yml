@@ -1,6 +1,6 @@
 # conf/base/parameters.yml
-paramet:  # ← Этот ключ должен быть корневым
-  target_column: "SalePrice"  # Ваш реальный столбец с таргетом
+paramet: 
+  target_column: "SalePrice" 
   categorical_columns: None
   numeric_columns: None
   outlier_threshold: 1.0
