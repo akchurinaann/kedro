@@ -1,6 +1,4 @@
 import pandas as pd
-
-   # Укажи путь к твоему файлу .parquet
 file_path = 'data/07_model_output/predictions.parquet'
 
    # Загрузка данных из файла .parquet
